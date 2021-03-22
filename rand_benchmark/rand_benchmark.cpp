@@ -80,7 +80,7 @@ int main() {
       }
     });
 
-    title = std::string{"nanobench ("} + bench_num + ")";
+    title = std::string{"nanobench/romu ("} + bench_num + ")";
     benchmark.run(title, [&]() {
       for (size_t i = 0; i < data.size(); i++) {
         data[i] = std::uniform_int_distribution<uint64_t>{}(ank_rng);
